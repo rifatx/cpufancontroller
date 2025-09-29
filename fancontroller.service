@@ -1,0 +1,10 @@
+[Unit]
+Description=CPU fan controller script
+
+[Service]
+ExecStart=/usr/local/bin/fan_controller.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+Alias=fancontroller.service
